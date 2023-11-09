@@ -9,6 +9,7 @@ WinTAK SDK for CIV exist since [4.1.0.231](https://www.civtak.org/2020/09/23/win
 <div align=center>
 <img src="imgs/00-takgov_wintaksdk.png">
 </div>
+
 * Microsfot Visual Studio (for this plugintemplate : Visual Studio 2022 v17.7.3 works)
 
 * .NET Framework which correspond to the Nugget Package .NET Framerwork version. In case of, here is a [link](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) for older version.
@@ -33,7 +34,9 @@ Give a name to your project
 <img src="imgs/02-project_name.png">
 </div>
 
-And Finaly select the .NET Framework to use
+And Finaly select the .NET Framework to use 
+
+**!! Use the version .NET Framework 4.8.1 !!**
 
 <div align=center>
 <img src="imgs/03-project_framework.png">
@@ -280,7 +283,7 @@ using Prism.Events;
 using Prism.Mef.Modularity;
 using Prism.Modularity;
 ```
-** To ensure you do not have an issue, in the NuGet Package Manager, install the Prism.Mef package.
+** To ensure you do not have an issue, in the NuGet Package Manager, install the Prism.Mef package which is provided by the WinTAK NuGet package.**
 
 The TemplateModule class should implement the IModule interface and should be decorated with the ModuleExport attribute in order to be recognized by MEF.
 
