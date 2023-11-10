@@ -53,4 +53,4 @@ using System.Windows;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: WinTak.Framework.TakSdkVersion("4.9.0.172")]
+[assembly: WinTak.Framework.TakSdkVersion("4.10.0.167")]
