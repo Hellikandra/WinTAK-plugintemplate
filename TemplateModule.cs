@@ -14,12 +14,12 @@ namespace plugintemplate
     [ModuleExport(typeof(TemplateModule), InitializationMode = InitializationMode.WhenAvailable)]
     internal class TemplateModule : IModule
     {
-        private readonly IEventAggregator _evenAggregator;
+        private readonly IEventAggregator _eventAggregator;
 
         [ImportingConstructor]
         public TemplateModule(IEventAggregator evenAggregator)
         {
-            _evenAggregator = evenAggregator;
+            _eventAggregator = evenAggregator;
         }
         // Modules will be initialized during startup. Any work that needs to be done at startup can
         // be initiated from here.
