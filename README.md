@@ -351,7 +351,30 @@ After that you can build and run the plugintemplate. Normally, the run will open
     <img src="imgs/18-WinTAK-Debug-plugin-test.png">
 </div>
 
+## General assembly attributes
 
+If you want to build the plugin with all the general info about the assembly attributes already preset,
+open the `AssemblyInfo.cs` file and paste your attributes.
+
+e.g at the bottom of `AssemblyInfo.cs`
+```csharp
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Build and Revision Numbers
+// by using the '*' as shown below:
+// [assembly: AssemblyVersion("1.0.*")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: WinTak.Framework.TakSdkVersion("4.10.0.162")]
+[assembly: WinTak.Framework.PluginDescription("WinTak Example Plugin Product By Your Name")]
+[assembly: WinTak.Framework.PluginIcon(@"C:\Path\To\Plugin\Image\Gear.ico")]
+[assembly: WinTak.Framework.PluginName("My Epic Plugin")]
+```
 ## Build for WinTAK release version
 In the WinTAK installation folder (by default : C:\Program\WinTAK), an WpkBuilder.exe exist. To be able to build an official WinTAK plugin, you first need to build your plugin in a release version. The release version is located in *%project%\bin\x64\release*.
 
